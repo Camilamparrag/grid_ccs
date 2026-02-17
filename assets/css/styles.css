@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+CU+Guides&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "embed", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    min-height: 100px;
+}  
+
+.contenedor >* {
+    box-shadow: -1px 1px 7px 0px 
+    padding: 10px;
+    border: 10px solid;
+    border-color: blue;
+}
+
+.encabezado { 
+    grid-area: encabezado ;
+    background-color: blueviolet;
+}
+
+.navegacion {
+    grid-area: navegacion ;
+    background-color: black;
+}
+
+.menu_lateral {
+    grid-area: menu_lateral ;
+    background-color: aqua;
+    height: 100px !important;
+}
+
+.articulo {
+    grid-area: articulo ;
+    background-color: brown;
+}
+
+.pie_de_pagina {
+    grid-area: pie_de_pagina ;
+    background-color: aquamarine;
+}
+
+.contenedor {
+    display: grid;
+    grid-template: 
+       "encabezado" 100px
+       "navegacion" 50px
+       "menu_lateral" auto
+       "articulo" 100px
+       "pie_de_pagina" 100px
+
+}
